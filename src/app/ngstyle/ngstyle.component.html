@@ -1,0 +1,16 @@
+
+<div [ngStyle]="{'background-color':'green'}">test </div>
+<div *ngFor="let person of people">
+<span [ngStyle]="{'background-color':person.country==='UK'?'red' :'yellow','font-size.px':50}"
+>
+  {{person.country}}</span>
+  <a [routerLink]="['/detail/',person.name]">go to detail</a>
+</div>
+
+
+<div *ngFor="let person of people">
+  <span [ngStyle]="{'background-color':showMyColor(person.country)}"
+  >{{person.country}}</span>
+<div  [ngStyle]="{'font-size.px':24}">{{person.country}}</div>
+</div>
+<button (click)="changeStatus()">{{ toggole == true ? 'active 1' : 'desactive 2' }}</button>

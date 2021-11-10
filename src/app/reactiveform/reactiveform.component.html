@@ -1,0 +1,29 @@
+<form [formGroup]="formulaire">
+<label>name</label>
+<input type="text" formControlName="name">
+<div *ngIf="name?.invalid"> input invalid</div>
+<div *ngIf="name?.errors?.email"> email invalid</div>
+<label>surname</label>
+<input type="text" formControlName="surname">
+<div *ngIf="surname?.invalid"> input invalid</div>
+
+<button (click)="addcours()" type="button">+ Add another course</button>
+  <div *ngFor="let alias of cours.controls; let i=index">
+    <!-- The repeated alias template -->
+    <label >cours:</label>
+    <input type="text">
+    <input type="submit" value="delete" (click)="delete(i)">
+
+  </div>
+<input type="submit" value="send" [disabled]="formulaire.invalid">
+</form>
+
+
+<form [formGroup]="for">
+  <label>age</label>
+  <input type="text" formControlName="age">
+  
+  <label>adresse</label>
+  <input type="text" formControlName="adresse">
+  
+  </form>

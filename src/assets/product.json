@@ -1,0 +1,8 @@
+{
+"Product": [
+  { "idProduct": 1, "code": 127,"libelle": "PC", "prixunitaire" : 2000, "tauxTva" :10},
+  { "idProduct": 1, "code": 127,"libelle": "tv", "prixunitaire" : 2000, "tauxTva" :10},
+  { "idProduct": 1, "code": 127,"libelle": "tv", "prixunitaire" : 2000, "tauxTva" :10}
+
+]
+}

@@ -1,0 +1,12 @@
+
+
+
+<div *ngIf="show===true">
+<input type="submit" value="avtive" (click)="changeStatuts()">
+</div>
+<div *ngIf="show===false">
+  <input type="submit" value="desactive" (click)="changeStatuts()">
+  </div>
+
+  <button (click)="changeStatuts()">{{ show == true ? 'twin5' : 'twin6 ' }}</button>
+<div [ngStyle]="{'background-color': 'red'}">test</div>
