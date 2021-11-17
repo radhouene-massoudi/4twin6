@@ -20,6 +20,10 @@ import { ChildComponent } from './child/child.component';
 import { TestComponent } from './test/test.component';
 import { ListproductComponent } from './product/listproduct/listproduct.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddprodcutComponent } from './product/addprodcut/addprodcut.component';
+import { UpdateproductComponent } from './product/updateproduct/updateproduct.component';
+import { DeleteproductComponent } from './product/deleteproduct/deleteproduct.component';
+import { DetailproductComponent } from './product/detailproduct/detailproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +41,11 @@ import { HttpClientModule } from '@angular/common/http';
     ParentComponent,
     ChildComponent,
     TestComponent,
-    ListproductComponent
+    ListproductComponent,
+    AddprodcutComponent,
+    UpdateproductComponent,
+    DeleteproductComponent,
+    DetailproductComponent
   ],
   imports: [
     BrowserModule,

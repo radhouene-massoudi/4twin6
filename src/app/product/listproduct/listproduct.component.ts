@@ -8,25 +8,20 @@ import { ProductService } from '../service/product.service';
   styleUrls: ['./listproduct.component.css']
 })
 export class ListproductComponent implements OnInit {
-  ListProduct!:Product[];
+  ListProduct:any=[];
   nb=0;
   j=-1;
   constructor(private p: ProductService) { }
 
   ngOnInit(): void {
-   this.p.fetchProducts().subscribe(
-     (d)=>{
-       console.log(d);
-       this.ListProduct=d;
-     },
-     (error)=>{
-console.log(error.status);
+    //console.log(this.p.fetchProducts());
+   //this.ListProduct=this.p.fetchProducts();
+    this.p.fetchProdut().subscribe(
+      (d)=>{
+        this.ListProduct=d;
+      }
+    );
 
-     },
-     ()=>{
-alert('dfg,dmhlkdf');
-     }
-   );
   }
   score(lib:any,t:any){
     this.j=t;

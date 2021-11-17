@@ -1,0 +1,18 @@
+<form #f="ngForm">
+  <label>name</label>
+  <input type="text" name="name" ngModel required minlength="3" #test="ngModel" >
+  <div  *ngIf="test.invalid && test.touched">
+    <div *ngIf="test.errors?.required">
+      required
+    </div>
+    <div *ngIf="test.errors?.minlength">
+      minlength
+    </div>
+  </div>
+
+  <label>des</label>
+  <input type="text" name="des"ngModel>
+  <label>prix</label>
+  <input type="number" name="prix" ngModel>
+  <input type="submit" value="send"  [disabled]="!f.valid" (click)="submit(f.value)">
+</form>

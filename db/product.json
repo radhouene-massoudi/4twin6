@@ -1,14 +1,63 @@
 {
-"Product": [
-  { "idProduct": 1, "code": 127,"libelle": "PC", "prixunitaire" : 2000, "tauxTva" :10},
-  { "idProduct": 1, "code": 127,"libelle": "tv", "prixunitaire" : 2000, "tauxTva" :10},
-  { "idProduct": 1, "code": 127,"libelle": "tv", "prixunitaire" : 2000, "tauxTva" :10}
-
-],
-"user": [
-  { "idProduct": 1, "code": 127,"libelle": "PC", "prixunitaire" : 2000, "tauxTva" :10},
-  { "idProduct": 1, "code": 127,"libelle": "tv", "prixunitaire" : 2000, "tauxTva" :10},
-  { "idProduct": 1, "code": 127,"libelle": "tv", "prixunitaire" : 2000, "tauxTva" :10}
-
-]
+  "Product": [
+    {
+      "name": "4twin6",
+      "des": "4twin6",
+      "prix": 2022,
+      "id": 2
+    },
+    {
+      "name": "4twin..6",
+      "des": "4twin..6",
+      "prix": 4555,
+      "id": 3
+    },
+    {
+      "name": "4twin2",
+      "des": "4twin2",
+      "prix": 2022,
+      "id": 4
+    },
+    {
+      "name": "4twin1",
+      "des": "4twin1",
+      "prix": 2022,
+      "id": 5
+    },
+    {
+      "name": "update",
+      "des": "update",
+      "prix": 555,
+      "id": 6
+    },
+    {
+      "name": "fddk",
+      "des": "mlfl",
+      "prix": 555,
+      "id": 11
+    }
+  ],
+  "user": [
+    {
+      "idProduct": 1,
+      "code": 127,
+      "libelle": "PC",
+      "prixunitaire": 2000,
+      "tauxTva": 10
+    },
+    {
+      "idProduct": 1,
+      "code": 127,
+      "libelle": "tv",
+      "prixunitaire": 2000,
+      "tauxTva": 10
+    },
+    {
+      "idProduct": 1,
+      "code": 127,
+      "libelle": "tv",
+      "prixunitaire": 2000,
+      "tauxTva": 10
+    }
+  ]
 }

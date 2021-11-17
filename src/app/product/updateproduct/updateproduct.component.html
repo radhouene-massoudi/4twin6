@@ -1,0 +1,10 @@
+<p>updateproduct works!</p>
+<form #f="ngForm">
+  <label>name</label>
+  <input type="text" name="name" ngModel required minlength="3" [(ngModel)]="for.name" >
+    <label>des</label>
+  <input type="text" name="des"ngModel [(ngModel)]="for.des" >
+  <label>prix</label>
+  <input type="number" name="prix" ngModel [(ngModel)]="for.prix" >
+  <input type="submit" value="send"  (click)="submit(f.value)"  >
+</form>

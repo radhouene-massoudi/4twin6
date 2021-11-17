@@ -1,11 +1,11 @@
 <div *ngFor="let product of ListProduct;let i=index">
-{{product.code}}
-{{product.idProduct}}
-{{product.libelle}}
-{{product.prixunitaire}}
-{{product.tauxTva}}
-<input type="submit" value="calculer" (click)="score(product.libelle,i)">
-<div *ngIf="i===j">
-{{nb}}
+{{product.name}}
+  {{product.prix}}
+  {{product.des}}
+
+<a [routerLink]="['/updateproduct/',product.id]" >update</a>
+  <a [routerLink]="['/remove/',product.id]" >remove</a>
+  <a [routerLink]="['/detail/',product.id]" >detail</a>
+
 </div>
-</div>
+<a [routerLink]="['/addp']" >add product</a>

@@ -11,14 +11,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { TestComponent } from './traitement/test/test.component';
 import { ListproductComponent } from './product/listproduct/listproduct.component';
+import {AddprodcutComponent} from "./product/addprodcut/addprodcut.component";
+import {UpdateproductComponent} from "./product/updateproduct/updateproduct.component";
+import {DeleteproductComponent} from "./product/deleteproduct/deleteproduct.component";
+import {DetailproductComponent} from "./product/detailproduct/detailproduct.component";
 
 
 const routes: Routes = [
 
   {path:'',redirectTo:'login', pathMatch:'full'},
   {path:'login',component:LoginComponent},
+  {path:'addp',component:AddprodcutComponent},
   {path:'test', component:NgclassComponent},
   {path:'products', component: ListproductComponent},
+  {path:'updateproduct/:id', component: UpdateproductComponent},
+  {path:'remove/:id', component: DeleteproductComponent},
+  {path:'detail/:id', component: DetailproductComponent},
   {path:'service', component: TestComponent},
   {path:'style', component: NgstyleComponent},
   {path:'student', component: StComponent,

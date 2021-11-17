@@ -7,14 +7,39 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProductService {
-  Products !:Product[];
+  Products :any =[];
   baseurl=environment.url;
   constructor(private http:HttpClient) {
 
    }
+addProduct(data:any){
+    return this.http.post(this.baseurl+'Product',data);
+}
+updateProduct(id:any,data:any){
+    return this.http.put(this.baseurl+'Product/'+id,data);
+}
+deleteProduct(id:any){
+    return this.http.delete(this.baseurl+'Product/'+id);
+}
+
+fetchProdut(){
+    return this.http.get(this.baseurl+'Product/');
+}
+getProductById(id:any){
+    return this.http.get(this.baseurl+'Product/'+id);
+}
+
+
+
+
 
   fetchProducts(){
-    return this.http.get<any>(this.baseurl+'product');
+    //console.log(this.Products);
+    return this.Products;
+  }
+  addProducts(p:any){
+    this.Products.push(p);
+    return this.Products;
   }
   
 }
